@@ -2,6 +2,14 @@
   padding: 140px 0;
   border-bottom: 1px solid rgba(19, 19, 19, 0.08);
 
+  & .row + .row {
+    margin-top: 108px;
+  }
+
+  &__text {
+    line-height: 26px;
+  }
+
   &__title {
     color: #111111;
     font-family: 'Dosis', sans-serif;
