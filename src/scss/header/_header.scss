@@ -1,0 +1,75 @@
+.header {
+  height: 100vh;
+  background: #a2a2a2 url(../img/bg.jpg) no-repeat center / cover;
+
+  &__logo {
+    width: 118px;
+    height: auto;
+  }
+
+  &__nav {
+    min-height: 21px;
+    padding: 26px 0;
+    width: 100%;
+  }
+
+  &__menu-item {
+    color: rgba(#fff, 0.75);
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.3px;
+    transition: all .3s ease;
+
+    & + & {
+      margin-left: 34px;
+    }
+
+    &:hover {
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+
+  &__info {
+    width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+    color: rgba(#fefefe, 0.9);
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 50px;
+  }
+
+  &__subtitle {
+    color: rgba(#fefefe, 0.68);
+    font-size: 19px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    margin-bottom: 35px;
+    border-radius: 2px;
+
+    & span {
+      transform: rotate(45deg);
+      display: block;
+      margin-top: 6px;
+      margin-left: 6px;
+    }
+  }
+}

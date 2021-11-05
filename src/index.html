@@ -9,7 +9,7 @@
     <title>LP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400,700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -18,11 +18,30 @@
 <body>
 
     <header class="header">
-
+        <div class="container d-flex flex-column justify-content-between h-100 align-items-center">
+            <nav class="header__nav d-flex justify-content-between">
+                <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+                <!-- /logo -->
+                <div class="header__menu">
+                    <a href="#" class="header__menu-item">home</a>
+                    <a href="#" class="header__menu-item">about</a>
+                    <a href="#" class="header__menu-item">services</a>
+                    <a href="#" class="header__menu-item">works</a>
+                    <a href="#" class="header__menu-item">contact</a>
+                </div>
+                <!-- / header__menu-->
+            </nav>
+            <!-- / header-nav-->
+            <div class="header__info">
+                <h1 class="header__title">Thomas Rhythm</h1>
+                <h3 class="header__subtitle">Extraordinary art director & creative minimalism lover</h3>
+            </div>
+            <a href="#about" class="header__btn"><span>></span></a>
+        </div>
     </header>
     <!-- / header -->
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <h2 class="about__title">About studio</h2>
 
