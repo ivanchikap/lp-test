@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.section-default {
+  padding: 140px 0;
+}
+
 .link-decor-on-hover {
   &:hover {
     text-decoration: underline !important;
@@ -147,6 +151,11 @@ strong {
   text-transform: uppercase;
   letter-spacing: 2.8px;
   border-radius: 2px;
+  
+  &--gray {
+    background-color: #cfcfcf;
+    color: #777;
+  }
 
   &--default {
     background-color: #cfcfcf;
@@ -157,6 +166,16 @@ strong {
   }
   &--small {
     padding: 8px 15px;
+    font-size: 11px;
+  }
+
+  &--angle {
+    &::after {
+      content: '\f105';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-left: 6px;
+    }
   }
 }
 
