@@ -1,0 +1,38 @@
+.choose {
+
+  &__card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 88px;
+
+  }
+
+  &__card-icon {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  &__card-title {
+    margin: 34px 0;
+    color: #111111;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5.6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  &__card-desc {
+    text-align: left;
+    line-height: 26px;
+    font-size: 14px;
+  }
+}
