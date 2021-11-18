@@ -24,6 +24,10 @@
     background-color: #131313;
     height: 100%;
     transform: rotateY(180deg);
+
+    @include tablet {
+      padding: 20px;
+    }
   }
   &__skills-title {
     color: #ffffff;
@@ -84,6 +88,21 @@
       .worker__skills {
         transform: rotateY(360deg);
       }
+    }
+
+    @include tablet {
+      height: 400px;
+    }
+    @include mobile-large {
+      height: 450px;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include mobile {
+      max-width: 90%;
+      height: 420px;
     }
   }
 

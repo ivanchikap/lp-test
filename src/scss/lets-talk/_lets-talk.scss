@@ -22,5 +22,11 @@
     top: -172px;
     right: -34px;
     height: 443px;
+    width: auto;
+
+    @include laptop {
+      height: 370px;
+      right: 0;
+    }
   }
 }

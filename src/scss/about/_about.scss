@@ -3,6 +3,10 @@
 
   & .row + .row {
     margin-top: 108px;
+
+    @include mobile-large {
+      margin-top: 60px;
+    }
   }
   & .title {
     margin-bottom: 75px;
