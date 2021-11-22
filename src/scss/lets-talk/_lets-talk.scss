@@ -9,6 +9,11 @@
     text-transform: uppercase;
     font-style: normal;
     letter-spacing: 4px;
+
+    @include laptop {
+      font-size: 16px;
+      line-height: 1.4;
+    }
   }
 
   &__text {
@@ -20,13 +25,18 @@
   &__img {
     position: absolute;
     top: -172px;
-    right: -34px;
+    right: 5px;
     height: 443px;
     width: auto;
 
     @include laptop {
       height: 370px;
-      right: 0;
+      top: -116px;
+    }
+
+    @include tablet {
+      height: 270px;
+      top: -72px;
     }
   }
 }

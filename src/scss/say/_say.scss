@@ -5,6 +5,10 @@
     max-width: 740px;
     margin: 0 auto;
     text-align: center;
+
+    @include tablet {
+      max-width: 570px;
+    }
   }
 
   .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
@@ -48,6 +52,13 @@
     left: 50%;
     bottom: -108px;
     transform: translateX(-50%);
+
+    @include laptop {
+      bottom: -70px;
+    }
+    @include tablet {
+      bottom: -40px;
+    }
   }
   .owl-carousel button.owl-dot {
     width: 7px;

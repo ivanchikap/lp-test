@@ -46,6 +46,10 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 50px;
+
+    @include tablet {
+      letter-spacing: 35px;
+    }
   }
 
   &__subtitle {

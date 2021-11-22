@@ -5,6 +5,21 @@
     justify-content: space-between;
     margin-bottom: 78px;
     margin-top: 120px;
+
+    @include laptop {
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+
+    @include tablet {
+      margin-top: 60px;
+      margin-bottom: 50px;
+    }
+
+    @include mobile-large {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
   }
 
 
@@ -24,6 +39,11 @@
     margin-right: auto;
     font-size: 48px;
     margin-bottom: 36px;
+
+    @include tablet {
+      margin-bottom: 28px;
+      font-size: 36px;
+    }
   }
 
   &__icon-text {
@@ -33,6 +53,11 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5.6px;
+
+    @include tablet {
+      font-size: 13px;
+      letter-spacing: 4px;
+    }
   }
 }
 

@@ -76,6 +76,10 @@
 
   &:not(:nth-child(-n+3)) {
     margin-top: 80px;
+
+    @include tablet {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -579,6 +583,10 @@
   .col-md-12 {
     flex: 0 0 100%;
     max-width: 100%;
+
+    & + & {
+      margin-top: 20px;
+    }
   }
   .order-md-first {
     order: -1;
@@ -739,7 +747,7 @@
     max-width: 100%;
 
     &:not(:nth-child(-n+1)) {
-      margin-top: 40px;
+      margin-top: 20px;
     }
   }
   .order-sm-first {

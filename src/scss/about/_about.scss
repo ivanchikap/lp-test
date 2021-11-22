@@ -4,11 +4,28 @@
   & .row + .row {
     margin-top: 108px;
 
-    @include mobile-large {
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+    @include tablet {
       margin-top: 60px;
+    }
+
+    @include mobile-large {
+      margin-top: 45px;
     }
   }
   & .title {
     margin-bottom: 75px;
+
+    @include laptop {
+      margin-bottom: 60px;
+    }
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
 }
