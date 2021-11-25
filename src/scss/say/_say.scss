@@ -4,6 +4,7 @@
   &__item {
     max-width: 740px;
     margin: 0 auto;
+    padding: 0 18px;
     text-align: center;
 
     @include tablet {
@@ -17,7 +18,7 @@
     height: 61px;
     background-color: #fff;
     top: 50%;
-    transform: rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
     border-radius: 4px;
 
     & > * {
@@ -25,7 +26,11 @@
       color: #111111;
       font-size: 20px;
       position: absolute;
+    }
 
+    @include tablet {
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -35,6 +40,11 @@
     & > * {
       left: 12px;
       top: 56%;
+
+      @include tablet {
+        left: 9px;
+        top: 54%;
+      }
     }
   }
   .owl-carousel .owl-nav button.owl-prev {
@@ -43,6 +53,10 @@
     & > * {
       right: 12px;
       top: 10%;
+      @include tablet {
+        right: 10px;
+        top: 2%;
+      }
     }
   }
 
@@ -58,6 +72,9 @@
     }
     @include tablet {
       bottom: -40px;
+    }
+    @include mobile {
+      bottom: -26px;
     }
   }
   .owl-carousel button.owl-dot {
@@ -91,6 +108,14 @@
 
   &__title {
     margin: 23px 0 38px 0;
+
+    @include mobile-large {
+      margin: 12px 0 18px 0;
+    }
+
+    @include mobile {
+      margin: 8px 0 14px 0;
+    }
   }
 
   &__text {
@@ -98,6 +123,16 @@
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 30px;
+
+    @include mobile-large {
+      margin-bottom: 16px;
+      line-height: 20px;
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
   }
 
   &__author {
@@ -106,5 +141,9 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2.2px;
+
+    @include mobile {
+      font-size: 10px;
+    }
   }
 }

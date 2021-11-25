@@ -2,6 +2,10 @@
   height: 100vh;
   background: #a2a2a2 url(../img/bg.jpg) no-repeat center / cover;
 
+  @include mobile-large {
+   height: 460px;
+  }
+
   &__logo {
     width: 118px;
     height: auto;
@@ -11,6 +15,43 @@
     min-height: 21px;
     padding: 26px 0;
     width: 100%;
+    position: relative;
+  }
+
+  &__menu {
+    @include mobile-large {
+      position: fixed;
+      right: 10px;
+      z-index: 11;
+      width: 50%;
+      background-color: rgba(200, 200, 200, 0.7);
+      margin-top: 40px;
+      border-radius: 4px;
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    right: 10px;
+    top: 26px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgba(200, 200, 200, 0.7);
+    cursor: pointer;
+
+    @include mobile-large {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__menu-btn-bar {
+    background-color: #000;
+    width: 80%;
+    height: 2px;
   }
 
   &__menu-item {
@@ -20,14 +61,33 @@
     text-transform: uppercase;
     letter-spacing: 3.3px;
     transition: all .3s ease;
+    padding: 8px;
+    border-radius: 4px;
 
     & + & {
-      margin-left: 34px;
+      margin-left: 18px;
+
+      @include mobile-large {
+        margin-left: 0;
+      }
     }
 
     &:hover {
       color: #fff;
       font-weight: 400;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    @include mobile-large {
+      color: #000;
+      display: block;
+      text-align: right;
+
+      &:hover {
+        color: #000;
+        font-weight: 600;
+        background-color: rgba(255, 255, 255, 0.4);
+      }
     }
   }
 
@@ -50,11 +110,30 @@
     @include tablet {
       letter-spacing: 35px;
     }
+
+    @include mobile-large {
+      font-size: 24px;
+      letter-spacing: 18px;
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      letter-spacing: 10px;
+    }
   }
 
   &__subtitle {
     color: rgba(#fefefe, 0.68);
     font-size: 19px;
+
+    @include mobile-large {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 15px;
+    }
   }
 
   &__btn {

@@ -37,10 +37,27 @@
 
   &__title-wrapper {
     margin-bottom: 80px;
+
+    @include tablet {
+      margin-bottom: 60px;
+    }
+    @include mobile-large {
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__card-info {
     margin: 30px 0 25px 0;
+
+    @include mobile-large {
+      margin: 20px 0 15px 0;
+    }
+    @include mobile {
+      margin: 15px 0 10px 0;
+    }
 
   }
 
@@ -68,6 +85,14 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    @include mobile-large {
+      margin: 12px 0 14px 0;
+    }
+
+    @include mobile {
+      margin: 8px 0 10px 0;
+    }
   }
 
   &__card-description {

@@ -9,6 +9,17 @@
 
   &__title {
     margin-bottom: 94px;
+
+    @include tablet {
+      margin-bottom: 80px;
+    }
+    @include mobile-large {
+       margin-bottom: 60px;
+     }
+    @include mobile {
+      margin-bottom: 40px;
+    }
+
   }
   
   &__btn {
@@ -22,6 +33,10 @@
     & > * {
       transform: rotate(-45deg);
       font-size: 11px;
+    }
+
+    @include tablet {
+      margin-right: 12px;
     }
   }
   &__item-title {
@@ -42,6 +57,16 @@
 
   &__form {
     margin-top: 80px;
+
+    @include tablet {
+      margin-top: 60px
+    }
+    @include mobile-large {
+      margin-top: 40px
+    }
+    @include mobile {
+      margin-top: 30px
+    }
   }
 
   &__form-input, &__form-textarea {
@@ -82,6 +107,30 @@
     font-size: 11px;
     font-weight: 400;
     margin-top: 20px;
+
+    &--none {
+      display: none;
+
+      @include mobile-large {
+        display: block;
+      }
+
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__form-bottom-wrapper {
+
+    @include mobile-large {
+      display: flex;
+    }
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+
+    }
   }
 
   &__form-btn {
@@ -96,5 +145,10 @@
     text-transform: uppercase;
     letter-spacing: 2.6px;
     margin-left: auto;
+
+    @include mobile {
+      width: 100%;
+      margin-top: 0;
+    }
   }
 }

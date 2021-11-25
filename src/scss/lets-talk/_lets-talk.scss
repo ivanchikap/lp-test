@@ -38,5 +38,12 @@
       height: 270px;
       top: -72px;
     }
+
+    @include mobile-large {
+      right: 8px;
+      height: 180px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }

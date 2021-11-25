@@ -1,6 +1,18 @@
 .newsletter {
   padding: 80px 0;
 
+  @include tablet {
+    padding: 60px 0;
+  }
+
+  @include mobile-large {
+    padding: 50px 0;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
   &__container {
     max-width: 440px;
     margin: 0 auto;
@@ -16,6 +28,12 @@
     text-transform: uppercase;
     letter-spacing: 4.8px;
     margin-bottom: 20px;
+
+    @include mobile {
+      line-height: 1.4;
+      font-size: 15px;
+      letter-spacing: 4px;
+    }
   }
 
   &__form-input {
@@ -49,5 +67,14 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2.6px;
+  }
+
+  .contact__form-desc {
+    @include mobile-large {
+      margin-top: 16px;
+    }
+    @include mobile {
+      margin-top: 10px;
+    }
   }
 }

@@ -1,3 +1,14 @@
 .start {
   padding: 70px 0;
+
+  @include tablet {
+    padding: 60px 0;
+  }
+
+  @include mobile-large {
+    padding: 50px 0;
+  }
+  @include mobile {
+    padding: 40px 0;
+  }
 }

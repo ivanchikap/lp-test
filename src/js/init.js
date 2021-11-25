@@ -8,5 +8,15 @@ $(function() {
         items:1,
         nav: true,
         dots: true
-    })
+    });
+});
+
+
+
+let menuBtn = document.getElementById('header__menu-btn');
+
+
+menuBtn.addEventListener("click", function() {
+    let menu = document.getElementById('header__menu');
+    menu.classList.toggle('d-sm-none');
 });

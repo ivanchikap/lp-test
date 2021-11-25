@@ -24,7 +24,14 @@
             <nav class="header__nav d-flex justify-content-between">
                 <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
                 <!-- /logo -->
-                <div class="header__menu">
+
+                <div class="header__menu-btn d-flex flex-column justify-content-around align-items-center" id="header__menu-btn">
+                    <span class="header__menu-btn-bar"></span>
+                    <span class="header__menu-btn-bar"></span>
+                    <span class="header__menu-btn-bar"></span>
+                </div>
+
+                <div class="header__menu d-sm-none" id="header__menu">
                     <a href="#" class="header__menu-item">home</a>
                     <a href="#" class="header__menu-item">about</a>
                     <a href="#" class="header__menu-item">services</a>
@@ -169,7 +176,7 @@
                         </div>
                     </div>
                     <!-- /col-4-->
-                    <div class="col-4 col-md-6 col-sm-12">
+                    <div class="col-4 col-md-6 col-sm-12 offset-md-3 offset-sm-0">
                         <div class="worker">
 
                             <div class="worker__photo">
@@ -231,31 +238,31 @@
                 <h3 class="title text-center">Services</h3>
                 <div class="tabs services__tabs" id="services-tabs">
                     <ul class="services__tabs-list">
-                        <li>
+                        <li class="services__list-item">
                             <a class="services__tab" href="#tabs-1">
                                 <span class="services__icon icon-strategy"></span>
                                 <span class="services__icon-text">Branding</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="services__list-item">
                             <a class="services__tab" href="#tabs-2">
                                 <span class="services__icon icon-desktop"></span>
                                 <span class="services__icon-text">Web Design</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="services__list-item">
                             <a class="services__tab" href="#tabs-3">
                                 <span class="services__icon icon-tools"></span>
                                 <span class="services__icon-text">Graphic Design</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="services__list-item offset-xs-0 offset-sm-2 ">
                             <a class="services__tab" href="#tabs-4">
                                 <span class="services__icon icon-gears"></span>
                                 <span class="services__icon-text">Development</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="services__list-item">
                             <a class="services__tab" href="#tabs-5">
                                 <span class="services__icon icon-camera"></span>
                                 <span class="services__icon-text">Photography</span>
@@ -281,16 +288,16 @@
                     </div>
                     <div id="tabs-2">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text-lg">2A brand for a company is like
                                     a reputation for a person. You earn reputation by trying to do hard things well.
                                 </p>
                                 <span class="author">— Jeff Bezos</span>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.</p>
                             </div>
                         </div>
@@ -298,16 +305,16 @@
                     </div>
                     <div id="tabs-3">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text-lg">3A brand for a company is like
                                     a reputation for a person. You earn reputation by trying to do hard things well.
                                 </p>
                                 <span class="author">— Jeff Bezos</span>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.</p>
                             </div>
                         </div>
@@ -315,16 +322,16 @@
                     </div>
                     <div id="tabs-4">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text-lg">4A brand for a company is like
                                     a reputation for a person. You earn reputation by trying to do hard things well.
                                 </p>
                                 <span class="author">— Jeff Bezos</span>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.</p>
                             </div>
                         </div>
@@ -332,16 +339,16 @@
                     </div>
                     <div id="tabs-5">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text-lg">5A brand for a company is like
                                     a reputation for a person. You earn reputation by trying to do hard things well.
                                 </p>
                                 <span class="author">— Jeff Bezos</span>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 col-md-12">
                                 <p class="text">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.</p>
                             </div>
                         </div>
@@ -354,7 +361,7 @@
         <section class="lets-talk bg-black section-default">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 col-xs-12">
                         <h3 class="lets-talk__title">
                             Looking for exclusive digital services?
                         </h3>
@@ -362,7 +369,7 @@
                             Integer non dapibus diam, ac eleifend lectus.</p>
                         <button class="btn btn--default">lets talk</button>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 d-xs-none">
                         <img class="lets-talk__img" src="img/monitor.png" alt="iMac-monitor">
                     </div>
                 </div>
@@ -376,7 +383,7 @@
             </div>
 
             <div class="portfolio__tabs" id="portfolio__tabs">
-                <ul class="portfolio__list d-flex justify-content-center">
+                <ul class="portfolio__list d-flex justify-content-center flex-wrap">
                     <li class="portfolio__list-item"><a href="#tabs-1">All Works</a></li>
                     <li class="portfolio__list-item"><a href="#tabs-2">Branding</a></li>
                     <li class="portfolio__list-item"><a href="#tabs-3">Design</a></li>
@@ -521,7 +528,7 @@
             <div class="container">
                <h2 class="title choose__title text-center">Why Choose Us?</h2>
                 <div class="row">
-                    <div class="col-4 col-sm-6">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <article class="choose__card">
                             <div class="choose__card-icon icon-flag"></div>
                             <h5 class="choose__card-title">We’re Creative Creative vguyuy</h5>
@@ -529,35 +536,35 @@
                                 In maximus ligula semper metus pellentesque mattis. Maecenas  volutpat, diam enim.</p>
                         </article>
                     </div>
-                    <div class="col-4 col-sm-6">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <article class="choose__card">
                             <div class="choose__card-icon icon-clock"></div>
                             <h5 class="choose__card-title">We’re Punctual</h5>
                             <p class="choose__card-desc">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend, lorem fermentum orci sit amet, iaculis libero.</p>
                         </article>
                     </div>
-                    <div class="col-4 col-sm-6">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <article class="choose__card">
                             <div class="choose__card-icon icon-hotairballoon"></div>
                             <h5 class="choose__card-title">We’re responsible</h5>
                             <p class="choose__card-desc">Fusce aliquet quam eget neque ultrices elementum. Nulla posuere felis id arcu blandit sagittis. Eleifend vestibulum purus, sit amet vulputate risus tristique non.</p>
                         </article>
                     </div>
-                    <div class="col-4 col-sm-6">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <article class="choose__card">
                             <div class="choose__card-icon icon-heart"></div>
                             <h5 class="choose__card-title">We have magic</h5>
                             <p class="choose__card-desc">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta. Nulla facilisi. Suspendisse ultricies eros blandit.</p>
                         </article>
                     </div>
-                    <div class="col-4 col-sm-6">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <article class="choose__card">
                             <div class="choose__card-icon icon-linegraph"></div>
                             <h5 class="choose__card-title">We love minimalism</h5>
                             <p class="choose__card-desc">Cras luctus interdum sodales. Quisque quis odio dui. Sedes sit amet neque malesuada, lobortis  commodo magna ntesque pharetra metus vivera sagittis.</p>
                         </article>
                     </div>
-                    <div class="col-4 col-sm-6">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <article class="choose__card">
                             <div class="choose__card-icon icon-chat"></div>
                             <h5 class="choose__card-title">We're Friendly</h5>
@@ -616,62 +623,62 @@
         </section>
         <!-- /say -->
         <section class="news section-default">
-        <div class="container">
-            <div class="news__title-wrapper d-flex justify-content-between align-items-center">
-                <h2 class="title">Latest News</h2>
-                <a class="news__link" href="#">All News in our blog</a>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <article class="news__card">
-                        <a href="#" class="news__card-img">
-                            <img src="img/news0.jpg" alt="news0">
-                        </a>
-                        <div class="news__card-info">
-                            <h5 class="news__card-title">New Web Design Trends</h5>
-                            <span class="news__card-author">John Doe | 10 December</span>
-                            <p class="news__card-description">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
-                        </div>
-                        <a href="#" class="btn btn--small btn--angle btn--gray">Read More</a>
-                    </article>
-                </div>
-                <div class="col-4">
-                    <article class="news__card">
-                        <a href="#" class="news__card-img">
-                            <img src="img/news1.png" alt="news1">
-                        </a>
-                        <div class="news__card-info">
-                            <h5 class="news__card-title">Minimalistic Design Forever Minimalistic Design ForeverMinimalistic Design Forever</h5>
-                            <span class="news__card-author">John Doe | 9 December</span>
-                            <p class="news__card-description">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
-                        </div>
-                        <a href="#" class="btn btn--small btn--angle btn--gray">Read More</a>
-                    </article>
-                </div>
-                <div class="col-4">
-                    <article class="news__card">
-                        <a href="#" class="news__card-img">
-                            <img src="img/news2.png" alt="news2">
-                        </a>
-                        <div class="news__card-info">
-                            <h5 class="news__card-title">Hipster’s Style in Web</h5>
-                            <span class="news__card-author">John Doe | 7 December John Doe | 7 December</span>
-                            <p class="news__card-description">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
-                        </div>
-                        <a href="#" class="btn btn--small btn--angle btn--gray">Read More</a>
-                    </article>
+            <div class="container">
+                <div class="news__title-wrapper d-flex justify-content-between align-items-center flex-sm-column">
+                    <h2 class="title mb-sm-3">Latest News</h2>
+                    <a class="news__link align-self-end" href="#">All News in our blog</a>
                 </div>
 
+                <div class="row">
+                    <div class="col-4 col-md-6 col-xs-12">
+                        <article class="news__card">
+                            <a href="#" class="news__card-img">
+                                <img src="img/news0.jpg" alt="news0">
+                            </a>
+                            <div class="news__card-info">
+                                <h5 class="news__card-title">New Web Design Trends</h5>
+                                <span class="news__card-author">John Doe | 10 December</span>
+                                <p class="news__card-description">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
+                            </div>
+                            <a href="#" class="btn btn--small btn--angle btn--gray">Read More</a>
+                        </article>
+                    </div>
+                    <div class="col-4 col-md-6 col-xs-12">
+                        <article class="news__card">
+                            <a href="#" class="news__card-img">
+                                <img src="img/news1.png" alt="news1">
+                            </a>
+                            <div class="news__card-info">
+                                <h5 class="news__card-title">Minimalistic Design Forever Minimalistic Design ForeverMinimalistic Design Forever</h5>
+                                <span class="news__card-author">John Doe | 9 December</span>
+                                <p class="news__card-description">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
+                            </div>
+                            <a href="#" class="btn btn--small btn--angle btn--gray">Read More</a>
+                        </article>
+                    </div>
+                    <div class="col-4 col-md-6 offset-md-3 offset-xs-0 col-xs-12">
+                        <article class="news__card">
+                            <a href="#" class="news__card-img">
+                                <img src="img/news2.png" alt="news2">
+                            </a>
+                            <div class="news__card-info">
+                                <h5 class="news__card-title">Hipster’s Style in Web</h5>
+                                <span class="news__card-author">John Doe | 7 December John Doe | 7 December</span>
+                                <p class="news__card-description">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
+                            </div>
+                            <a href="#" class="btn btn--small btn--angle btn--gray">Read More</a>
+                        </article>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
         <!-- / news-->
         <section class="newsletter bg-gray">
             <div class="newsletter__container">
-                <h2 class="newsletter__title">Stay informed with OUR NEWSLETTER</h2>
-                <form action="#" class="newsletter__form d-flex">
-                    <input class="newsletter__form-input" type="email" placeholder="Enter email here">
+                <h2 class="title newsletter__title">Stay informed with OUR NEWSLETTER</h2>
+                <form action="#" class="newsletter__form d-flex flex-xs-column">
+                    <input class="newsletter__form-input mb-xs-3" type="email" placeholder="Enter email here">
                     <button class="newsletter__form-btn" type="submit">Subscribe</button>
                 </form>
                 <p class="contact__form-desc text-center"><i class="fas fa-info-circle"></i> Please trust us, we will never send you spam</p>
@@ -683,7 +690,7 @@
                 <h2 class="contact__title title text-center">Contact</h2>
                 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <div class="contact__item d-flex align-items-center">
                             <a type="tel" href="tel:+61 3 8376 6284" class="header__btn contact__btn"><i class="fas fa-phone-alt"></i></a>
                             <div class="contact__item-info">
@@ -693,7 +700,7 @@
                         </div>
                     </div> 
 
-                    <div class="col-4">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <div class="contact__item d-flex align-items-center">
                             <a type="address" href="#" class="header__btn contact__btn"><i class="fas fa-map-marker-alt"></i></a>
                             <div class="contact__item-info">
@@ -703,7 +710,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-4 col-sm-6 col-xs-12">
                         <div class="contact__item d-flex align-items-center">
                             <a type="email" href="email:+61 3 8376 6284" class="header__btn contact__btn"><i class="fas fa-phone-alt"></i></a>
                             <div class="contact__item-info">
@@ -716,14 +723,18 @@
 
                 <form action="#" class="contact__form">
                    <div class="row">
-                       <div class="col-6">
+                       <div class="col-6 col-sm-12">
                            <input class="contact__form-input" type="text" placeholder="Name">
                            <input class="contact__form-input" type="email" placeholder="Email">
-                           <p class="contact__form-desc"><i class="fas fa-info-circle"></i> All the fields are required</p>
+                           <p class="contact__form-desc d-sm-none"><i class="fas fa-info-circle"></i> All the fields are required</p>
                        </div>
-                       <div class="col-6 text-right">
+                       <div class="col-6 col-sm-12 text-right">
                            <textarea class="contact__form-textarea" name="contact__textarea" id="" placeholder="Message"></textarea>
-                           <button class="contact__form-btn" type="submit">Submit Message</button>
+                           <div class="contact__form-bottom-wrapper">
+                               <p class="contact__form-desc contact__form-desc--none"><i class="fas fa-info-circle"></i> All the fields are required</p>
+                               <button class="contact__form-btn" type="submit">Submit Message</button>
+                           </div>
+
                        </div>
                    </div>
                 </form>

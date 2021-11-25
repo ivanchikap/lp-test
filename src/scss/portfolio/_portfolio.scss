@@ -2,26 +2,53 @@
   &__description {
     max-width: 750px;
     line-height: 26px;
-    margin: 72px auto 72px auto;
+    margin: 72px auto;
+
+    @include laptop {
+      margin: 62px auto;
+    }
+    @include tablet {
+      margin: 52px auto;
+    }
+    @include mobile-large {
+      margin: 42px auto;
+    }
+    @include mobile {
+      margin: 32px auto;
+    }
   }
 
   &__list {
     margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mobile-large {
+      margin-bottom: 30px;
+    }
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__list-item {
+    text-align: center;
+    width: 25%;
     text-transform: uppercase;
     color: rgba(#111, 0.5);
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
     letter-spacing: 5.2px;
+    padding: 6px;
 
     &.ui-state-active {
       color: #111;
     }
 
-    & + & {
-      margin-left: 66px;
+    @include mobile-large {
+      width: 50%;
     }
   }
 
